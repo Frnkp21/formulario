@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html LANG="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <h1>Formulario</h1>
+    <form>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Apellido:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+    <form>
+        <label for="Edad">Edad:</label><br>
+        <input type="number" id="Edad" name="Edad" min="16" max="64"><br>
+      </form> 
+      <p><b>selecciona si eres menor o mayor:</b></p>
+
+      <form>
+        <input type="radio" id="menor" name="menor" value="MENOR">
+        <label for="menor">Menor</label><br>
+        <input type="radio" id="menor" name="menor" value="MAYOR">
+        <label for="mayor">Mayor</label><br>
+      </form> 
+      <p><b>que ves en la imagen?</b></p>
+      <img src="amongus.jpg" alt="imagen" width="600px" height="400px"><br>
+      <from>
+          <select name="objeto" id="objeto">
+            <option>...</option>
+            <option>un Barco</option>
+            <option>un Tiburon</option>
+            <option>Amongus</option>
+            <input type="submit">
+          </select>
+      </from>
+
+      <form>
+          <input type="button" value="Comprar">
+      </form>
+      <p><b>rellena los siguientes datos</b></p>
+      <form>
+        <label for="correo">correo electronico:</label><br>
+        <input type="text" id="correo" name="correo"><br>
+
+        <label for="numero">numero de telefono:</label><br>
+        <input type="text" id="numero" name="numero"><br>
+        <label for="dni">DNI:</label><br>
+        <input type="text" id="dni" name="dni"><br>
+        <label for="Direccion">Direccion:</label><br>
+        <input type="text" id="Direccion" name="Direccion"><br>
+        <label for="codigo">Codigo postal:</label><br>
+        <input type="text" id="codigo" name="codigo"><br>
+        <input type="password"><br>
+
+    </form>
+    <p><b>Deja un comentario de que te ha parecido el formulario.</b></p>
+    <from>
+        <textarea name="message" rows="10" cols="30">
+
+        </textarea> 
+        <br><button type="button" onclick="alert('Comentario publicado!')">publicar comentario></button> 
+    </from>
+    <p><b>Extra: Calculadora rapida</b></p>
+    <form action="/action_page.php"
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range"  id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+  </form> 
+  <form>
+      <p><b>indica la fecha y la hora</b></p>
+    <input type="date">
+  </form>
+  <from>
+    <input type="time">
+  </from>
+    <form>
+        <br><input type="submit" value="enviar Formulario">
+    </form>
+  </body>
+</html>
